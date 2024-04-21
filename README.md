@@ -3,4 +3,8 @@ waybar可能显示有问题，建议调整一下缩放
 
 
 使用https://github.com/flick0/dotfiles/tree/aurora
+
+
+
+
 https://github.com/JaKooLit/Arch-Hyprland
