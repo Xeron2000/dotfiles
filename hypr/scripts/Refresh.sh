@@ -15,7 +15,7 @@ file_exists() {
 }
 
 # Kill already running processes
-_ps=(waybar rofi swaync)
+_ps=(waybar rofi)
 for _prs in "${_ps[@]}"; do
     if pidof "${_prs}" >/dev/null; then
         pkill "${_prs}"
@@ -27,12 +27,9 @@ sleep 0.3
 waybar -c $HOME/.config/hypr/component/waybar/config.c -s $HOME/.config/hypr/component/waybar/style.css &
 
 
-# relaunch swaync
-sleep 0.5
-swaync > /dev/null 2>&1 &
 
 # Relaunching rainbow borders if the script exists
-sleep 1
+
 if file_exists "${UserScripts}/RainbowBorders.sh"; then
     ${UserScripts}/RainbowBorders.sh &
 fi

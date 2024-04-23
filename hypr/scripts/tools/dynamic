@@ -19,7 +19,7 @@ def print(ar):
 #     f.write("")
 
 global PAUSE_MEDIA
-PAUSE_MEDIA = False
+PAUSE_MEDIA = True
 
 def notif_watcher():
     with open(f"{Path.home()}/.config/hypr/store/latest_notif","rb") as f:
@@ -76,11 +76,11 @@ with open("test.log", "wb") as f:
         dat = json.loads(line)
         if not PAUSE_MEDIA:
             if "text" in dat:
-                dat["text"] = dat["text"].replace(" ", "").replace("", "")
+                dat["text"] = dat["text"].replace("", "").replace("", "")
                 print(dat)
             else:
                 print({"class":"none","text":""})
 
 t.join()
 # d.join()
-        
+

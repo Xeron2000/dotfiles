@@ -1,1 +1,1 @@
-{"class": "playing", "text": "E T - Melody of the Night \u591c\u7684\u92fc\u7434\u66f2 No. 4& 23 (02:26/04:00) ", "tooltip": "Melody of the Night \u591c\u7684\u92fc\u7434\u66f2 No. 4&amp; 23\nby E T\n(chromium.instance101631)"}
+{"class": "none", "text": ""}

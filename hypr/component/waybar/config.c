@@ -34,7 +34,7 @@
             "return-type": "json",
             "exec": "~/.config/hypr/scripts/tools/start_dyn",
             "escape":true,
-            "format": "{:.27}"
+            "format": "{:.42}"
         },
         "clock#peony": {
             "interval": 60,
