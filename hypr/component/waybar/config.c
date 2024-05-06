@@ -38,7 +38,7 @@
         },
         "clock#peony": {
             "interval": 60,
-            "format": "{:%Y.%m.%d | %I:%M}",
+            "format": "{:%Y.%m.%d | %H:%M}",
             "max-length": 25
         },
 
@@ -83,12 +83,12 @@
             "format": "{icon}  {capacity}%",
             "format-charging": " {capacity}%",
             "format-plugged": "󱘖 {capacity}%",
-            "format-full": "{icon} Full",
-            "format-alt": "{icon} {time}",
+            "format-full": "{icon}  Full",
+            "format-alt": "{icon}  {time}",
             "format-icons": ["", "", "", "", ""],
             "format-time": "{H}h {M}min",
             "tooltip": true,
-            "tooltip-format": "{timeTo} {power}w",
+            "tooltip-format": "{timeTo}  {power}w",
             "on-click-middle": "~/.config/hypr/scripts/ChangeBlur.sh",
             "on-click-right": "~/.config/hypr/scripts/Wlogout.sh",
         },

@@ -383,7 +383,7 @@
 "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-bluetooth": "{icon} 󰂰 {volume}%",
-    "format-muted": "󰖁",
+    "format-muted": " 󰖁 ",
     "format-icons": {
         "headphone": "",
         "hands-free": "",
@@ -406,7 +406,7 @@
 "pulseaudio#microphone": {
     "format": "{format_source}",
     "format-source": " {volume}%",
-    "format-source-muted": " ",
+    "format-source-muted": "  ",
     "on-click": "~/.config/hypr/scripts/Volume.sh --toggle-mic",
     "on-click-right": "pavucontrol -t 4",
     "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --mic-inc",
