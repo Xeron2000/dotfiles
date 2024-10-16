@@ -23,3 +23,16 @@ abbr .5 'cd ../../../../..'
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
+
+# pnpm
+set -gx PNPM_HOME "/home/xeron/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+
+# Created by `pipx` on 2024-08-29 01:02:04
+set PATH $PATH /home/xeron/.local/bin
+
+thefuck --alias | source
