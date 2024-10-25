@@ -12,7 +12,6 @@ alias lla="ls -la"
 alias lt="ls --tree"
 alias du="dust"
 alias df="duf"
-alias cat="bat"
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'
