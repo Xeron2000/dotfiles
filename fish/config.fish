@@ -35,3 +35,17 @@ end
 set PATH $PATH /home/xeron/.local/bin
 
 thefuck --alias | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Load direnv for Fish
+if type -q direnv
+    eval (direnv hook fish)
+end
