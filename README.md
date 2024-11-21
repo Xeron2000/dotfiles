@@ -1,14 +1,20 @@
 # 自用配置
 
-![](https://github.com/Xeron2000/dotfiles/blob/master/swappy-20240421-182748.png)
+![截图](https://github.com/Xeron2000/dotfiles/blob/master/swappy-20240421-182748.png)
 
-/hypr/hyprland.conf中monitor = , 2560x1600@165, 0x0, 1.666667修改为自己的配置(可以用hyprctl monitors查看屏幕)
-waybar可能显示有问题，建议调整一下缩放
+## 配置说明
 
+在 `/hypr/hyprland.conf` 中，找到以下配置：
 
-使用[https://github.com/flick0/dotfiles/tree/aurora]
+```
+monitor = , 2560x1600@165, 0x0, 1.666667
+```
 
+将其修改为你自己的屏幕配置。你可以使用 `hyprctl monitors` 来查看当前屏幕的详细信息。
 
+> **提示**：如果在 `waybar` 中遇到显示问题，建议调整一下缩放设置。
 
+参考以下配置：
 
-[https://github.com/JaKooLit/Arch-Hyprland]
+- [Flick0's Dotfiles](https://github.com/flick0/dotfiles/tree/aurora)
+- [JaKooLit's Arch-Hyprland](https://github.com/JaKooLit/Arch-Hyprland)
