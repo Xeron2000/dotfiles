@@ -12,6 +12,7 @@ alias lla="ls -la"
 alias lt="ls --tree"
 alias du="dust"
 alias df="duf"
+alias vim="nvim"
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'
@@ -26,7 +27,7 @@ abbr mkdir 'mkdir -p'
 # pnpm
 set -gx PNPM_HOME "/home/xeron/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
@@ -49,3 +50,5 @@ eval "$(pyenv virtualenv-init -)"
 if type -q direnv
     eval (direnv hook fish)
 end
+
+set -U fish_user_paths $fish_user_paths $HOME/go/bin
