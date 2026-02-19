@@ -11,6 +11,7 @@
     ./programs/git.nix
     ./programs/shell.nix
     ./programs/dev-tools.nix
+    ./programs/desktop.nix
   ];
 
   # 核心包列表
